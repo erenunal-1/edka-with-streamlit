@@ -112,7 +112,7 @@ if selected == "About":
             " you to create and incorporate new features into your analytical views in real-time. Dive into insights"
             " with ease and enjoy a smoother analytical journey with PyGWalker.")
 
-    video_file = open("Data/PyGWalker Trailer.mp4", "rb")
+    video_file = open("PyGWalker Trailer.mp4", "rb")
     video_bytes = video_file.read()
     st.video(video_bytes)
 
@@ -125,7 +125,7 @@ if selected == "About":
             "crafting a detailed narrative of your dataset. Take a plunge into the realm of Pandas Profiling and "
             "embark on a discovery journey.")
 
-    video_file = open("Data/Pandas Profiling Trailer.mp4", "rb")
+    video_file = open("Pandas Profiling Trailer.mp4", "rb")
     video_bytes = video_file.read()
     st.video(video_bytes)
 
@@ -134,7 +134,7 @@ if selected == "About":
             " reveal distributions, missing values, correlations, and more. Initiate your exploration with SweetViz "
             "and unveil the magic within your datasets!")
 
-    video_file = open("Data/SweetViz Trailer.mp4", "rb")
+    video_file = open("SweetViz Trailer.mp4", "rb")
     video_bytes = video_file.read()
     st.video(video_bytes)
 
@@ -144,7 +144,7 @@ if selected == "About":
             "it automates the necessary steps to predict the target variable in your dataset and evaluates various "
             "models. Afterwards, it selects the most dazzling model among the options. ")
 
-    video_file = open("Data/Rapid Model Builder Trailer.mp4", "rb")
+    video_file = open("Rapid Model Builder Trailer.mp4", "rb")
     video_bytes = video_file.read()
     st.video(video_bytes)
 
