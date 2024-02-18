@@ -24,7 +24,7 @@ def load_lottiefile(path: str):
         data = json.load(f)
         return data
 
-lottie_file = "Data/Animation.json"
+lottie_file = "Animation.json"
 lottie_json = load_lottiefile(lottie_file) 
 
 # Sidebar
