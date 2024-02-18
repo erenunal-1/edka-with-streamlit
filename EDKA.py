@@ -70,7 +70,7 @@ if selected == "SweetViz":
     st.header("Automated Data Visualization with SweetViz", divider="rainbow")
     df = pd.read_csv("dataset.csv")
     report = sv.analyze(df)
-     report_path = "sweetviz_report.html"
+    report_path = "sweetviz_report.html"
     report.show_html(report_path)
     with open(report_path, "r") as f:
         html = f.read()
