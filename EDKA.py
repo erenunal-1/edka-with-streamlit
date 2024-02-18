@@ -63,7 +63,7 @@ if selected == "Pandas Profiling":
     profile.to_file(output_file=profile_path)
     with open(profile_path, "r") as f:
         html = f.read()
-    st.components.v1.html(html, width=1400, height=800, scrolling=True)
+    st.components.v1.html(html, width=1600, height=800, scrolling=True)
 
 # sweetviz
 if selected == "SweetViz":
@@ -74,7 +74,7 @@ if selected == "SweetViz":
     report.show_html(report_path)
     with open(report_path, "r") as f:
         html = f.read()
-    st.components.v1.html(html, width=1600, height=800, scrolling=True)
+    st.components.v1.html(html, width=1400, height=800, scrolling=True)
 
 # Rapid Model Builder
 if selected == "Rapid Model Builder":
