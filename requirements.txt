@@ -1,10 +1,9 @@
 streamlit
 streamlit-option-menu
+streamlit-lottie
 pandas
 ydata-profiling
 sweetviz
-pygwalker
-pycaret
 json
-streamlit-lottie
+pygwalker
 streamlit.components.v1
