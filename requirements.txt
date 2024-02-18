@@ -1,8 +1,8 @@
 streamlit
-streamlit-option-menu
-streamlit-lottie
+streamlit_option_menu
 pandas
 ydata-profiling
 sweetviz
-json
 pygwalker
+pandas-profiling
+pycaret
