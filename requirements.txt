@@ -1,6 +1,6 @@
 streamlit
 streamlit_option_menu
-streamlit_lottie
+streamlit-lottie
 pandas
 ydata-profiling
 sweetviz
