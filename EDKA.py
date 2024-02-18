@@ -20,13 +20,12 @@ if os.path.exists("./dataset.csv"):
 # Lottie
 @st.cache_data
 def load_lottiefile(path: str):
-    with open(path, "r") as f:
+    with open(path) as f:
         data = json.load(f)
         return data
 
 lottie_file = "Data/Animation.json"
-lottie_json = load_lottiefile(lottie_file)
-lottie_obj = lottie.JsonLottie(lottie_json) 
+lottie_json = load_lottiefile(lottie_file) 
 
 # Sidebar
 with st.sidebar:
