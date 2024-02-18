@@ -1,7 +1,9 @@
-streamlit==0.92.0
-streamlit-option-menu==0.3.0
-pandas==1.3.3
-ydata-profiling==3.1.12
-sweetviz==2.2.4
-pygwalker==0.3.0
-pycaret==3.1.0
+streamlit
+streamlit_option_menu
+pandas
+ydata_profiling
+sweetviz
+pygwalker
+pycaret
+json
+streamlit_lottie
