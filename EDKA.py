@@ -70,7 +70,7 @@ if selected == "SweetViz":
     st.header("Automated Data Visualization with SweetViz", divider="rainbow")
     df = pd.read_csv("dataset.csv")
     report = sv.analyze(df)
-    st.write(report.show_html())
+    st.components.v1.html(report.show_html(), width=1600, height=800, scrolling=True)
 
 # Rapid Model Builder
 if selected == "Rapid Model Builder":
