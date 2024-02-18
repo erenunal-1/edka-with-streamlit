@@ -6,4 +6,3 @@ ydata-profiling
 sweetviz
 json
 pygwalker
-streamlit.components.v1
