@@ -6,7 +6,13 @@ We aim to convey your data not only with figures but also through compelling sto
 
 PyGWalker transforms your data into interactive visualization apps with a line of code, enabling effortless sharing with one click. It also offers a range of features designed to simplify data analysis, always ensuring scalability. With Data Painter, you can refine your data swiftly using an eraser to remove outliers, clusters and complex patterns within seconds. You can create new variables, labels, or features seamlessly without disrupting your analysis workflow. Data Painter allows you to create and incorporate new features into your analytical views in real-time. Dive into insights with ease and enjoy a smoother analytical journey with PyGWalker.
 
-Discover this mesmerising experience with a 50% discount for the first 2 months. 🏷️ **EDKA**
+Discover this mesmerising experience with a 50% discount for the first 2 months. 
+
+🏷️ **EDKA**
+
+🌐 [PyGWalker](https://kanaries.net/home/pygwalker)
+
+https://github.com/erenunal-1/edka-with-streamlit/assets/160074028/8908cf94-6630-43a1-8821-7998d372b8ab
 
 ## Pandas Profiling
 
