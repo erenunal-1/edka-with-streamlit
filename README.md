@@ -10,7 +10,7 @@ Discover this mesmerising experience with a 50% discount for the first 2 months.
 
 🏷️ **EDKA**
 
-🌐 [PyGWalker](https://kanaries.net/home/pygwalker)
+🔗 [PyGWalker](https://kanaries.net/home/pygwalker)
 
 https://github.com/erenunal-1/edka-with-streamlit/assets/160074028/8908cf94-6630-43a1-8821-7998d372b8ab
 
