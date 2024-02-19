@@ -8,7 +8,6 @@ PyGWalker transforms your data into interactive visualization apps with a line o
 
 Discover this mesmerising experience with a 50% discount for the first 2 months. 🏷️ **EDKA**
 
-
 ## Pandas Profiling
 
 Standing as a beacon of insight in the field of data analysis, Pandas Profiling offers a feature-rich treasure trove to illuminate the depths of your data set. With just a few lines of code, it unveils valuable information crucial for efficient data exploration and analysis by generating a comprehensive report. The beauty of Pandas Profiling lies in its simplicity and efficiency. With minimal effort, it saves valuable time and effort in the analytical journey by crafting a detailed narrative of your dataset. Take a plunge into the realm of Pandas Profiling and embark on a discovery journey.
@@ -17,9 +16,13 @@ Standing as a beacon of insight in the field of data analysis, Pandas Profiling 
 
 Unlock the secrets of your data swiftly and comprehensively. With just a few clicks, reveal distributions, missing values, correlations, and more. Initiate your exploration with SweetViz and unveil the magic within your datasets!
 
+https://github.com/erenunal-1/edka-with-streamlit/assets/160074028/1a8b63a4-a40a-4e3a-b2c5-ba293f962106
+
 ## Rapid Model Builder
 
 Initially obscure and complex data shines like stars with the guidance of Rapid Model Builder, leading you in the right direction. Depending on the type of problem you choose, it automates the necessary steps to predict the target variable in your dataset and evaluates various models. Afterwards, it selects the most dazzling model among the options.
+
+https://github.com/erenunal-1/edka-with-streamlit/assets/160074028/33167f09-73ff-40c9-95f1-a814d273716d
 
 ## Custom Model Builder
 
