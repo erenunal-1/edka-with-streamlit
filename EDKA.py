@@ -48,7 +48,7 @@ if selected == "Upload":
         st.dataframe(df)
 
 # PyGWalker
-if selected not in ["Upload", "About"]:
+if selected == "PyGWalker":
     if "df" not in locals() or df is None:
         st.warning("Please upload the dataset before using PyGWalker.")
     else:
