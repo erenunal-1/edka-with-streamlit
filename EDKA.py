@@ -48,7 +48,7 @@ if selected == "Upload":
         st.dataframe(df)
 
 # PyGWalker
-if df is None:
+if df is None and selected not in ["Upload", "About"]:
     st.warning("Please upload a dataset before visualizing or building models.")
 else:
     if selected == "PyGWalker":
