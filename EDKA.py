@@ -48,14 +48,15 @@ if selected == "Upload":
         st.dataframe(df)
 
 # PyGWalker
-if df is None and selected not in ["Upload", "About"]:
-    st.warning("Please upload a dataset before visualizing or building models.")
-else:
-    if selected == "PyGWalker":
-        st.header("Autopilot for Exploratory Data Analysis with PyGWalker", divider="rainbow")
-        df = pd.read_csv("dataset.csv")
-        pyg_walker_html = pyg.walk(df, return_html=True)
-        stc.html(pyg_walker_html, scrolling=True, height=1000)
+if selected not in ["Upload", "About"]:
+    if df is None:
+        st.warning("Please upload a dataset before visualizing or building models.")
+    else:
+        # PyGWalker
+        if selected == "PyGWalker":
+            st.header("Autopilot for Exploratory Data Analysis with PyGWalker", divider="rainbow")
+            pyg_walker_html = pyg.walk(df, return_html=True)
+            stc.html(pyg_walker_html, scrolling=True, height=1000)
 
 # ydataprofiling
 if selected == "Pandas Profiling":
