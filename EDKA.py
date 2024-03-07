@@ -50,7 +50,7 @@ if selected == "Upload":
 # PyGWalker
 if selected not in ["Upload", "About"]:
     if "df" not in locals() or df is None:
-        st.warning("Please upload a dataset before visualizing or building models.")
+        st.warning("Please upload the data set.")
     else:
         # PyGWalker
         if selected == "PyGWalker":
