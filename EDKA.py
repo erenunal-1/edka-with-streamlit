@@ -16,6 +16,8 @@ st.set_page_config(layout="wide")
 # Dataset
 if os.path.exists("./dataset.csv"):
     df = pd.read_csv("dataset.csv", index_col=None)
+else:
+    st.error("Error: 'dataset.csv' file not found. Please upload the file.")
 
 # Lottie
 @st.cache_data
