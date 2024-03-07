@@ -50,7 +50,7 @@ if selected == "Upload":
 # PyGWalker
 if selected not in ["Upload", "About"]:
     if "df" not in locals() or df is None:
-        st.warning("Please upload the data set.")
+        st.warning("Please upload the dataset before using PyGWalker.")
     else:
         # PyGWalker
         if selected == "PyGWalker":
@@ -60,47 +60,55 @@ if selected not in ["Upload", "About"]:
 
 # ydataprofiling
 if selected == "Pandas Profiling":
-    st.header("Automated Data Visualization with Pandas Profiling", divider="rainbow")
-    df = pd.read_csv("dataset.csv")
-    profile = ProfileReport(df)
-    profile_path = "profile_report.html"
-    profile.to_file(output_file=profile_path)
-    with open(profile_path, "r") as f:
-        html = f.read()
-    st.components.v1.html(html, width=1600, height=800, scrolling=True)
+    if "df" not in locals() or df is None:
+        st.warning("Please upload the dataset before using Pandas Profiling.")
+    else:
+        st.header("Automated Data Visualization with Pandas Profiling", divider="rainbow")
+        profile = ProfileReport(df)
+        profile_path = "profile_report.html"
+        profile.to_file(output_file=profile_path)
+        with open(profile_path, "r") as f:
+            html = f.read()
+        st.components.v1.html(html, width=1600, height=800, scrolling=True)
 
 # sweetviz
 if selected == "SweetViz":
-    st.header("Automated Data Visualization with SweetViz", divider="rainbow")
-    df = pd.read_csv("dataset.csv")
-    report = sv.analyze(df)
-    report_path = "sweetviz_report.html"
-    report.show_html(report_path)
-    with open(report_path, "r") as f:
-        html = f.read()
-    st.components.v1.html(html, width=1400, height=800, scrolling=True)
+    if "df" not in locals() or df is None:
+        st.warning("Please upload the dataset before using SweetViz.")
+    else:
+        st.header("Automated Data Visualization with SweetViz", divider="rainbow")
+        report = sv.analyze(df)
+        report_path = "sweetviz_report.html"
+        report.show_html(report_path)
+        with open(report_path, "r") as f:
+            html = f.read()
+        st.components.v1.html(html, width=1400, height=800, scrolling=True)
+
 
 # Rapid Model Builder
 if selected == "Rapid Model Builder":
-    st.header("Automated Rapid Model Builder", divider="rainbow")
-    chosen_target = st.selectbox("Choose the Target Column", df.columns, help="The target column is the variable you "
-                                                                              "want to predict.")
-    chosen_problem = st.selectbox("Choose the Problem Type", ["Classification", "Regression"])
-    if chosen_problem == "Classification":
-        from pycaret.classification import setup, compare_models, pull, save_model, load_model
-    elif chosen_problem == "Regression":
-        from pycaret.regression import setup, compare_models, pull, save_model, load_model
+    if "df" not in locals() or df is None:
+        st.warning("Please upload the dataset before using Rapid Model Builder.")
+    else:
+        st.header("Automated Rapid Model Builder", divider="rainbow")
+        chosen_target = st.selectbox("Choose the Target Column", df.columns, help="The target column is the variable you "
+                                                                                  "want to predict.")
+        chosen_problem = st.selectbox("Choose the Problem Type", ["Classification", "Regression"])
+        if chosen_problem == "Classification":
+            from pycaret.classification import setup, compare_models, pull, save_model, load_model
+        elif chosen_problem == "Regression":
+            from pycaret.regression import setup, compare_models, pull, save_model, load_model
 
-    if st.button("Run Modelling"):
-        setup(df, target=chosen_target)
-        setup_df = pull()
-        st.dataframe(setup_df)
-        rapidmodel = compare_models()
-        compare_df = pull()
-        st.dataframe(compare_df)
-        save_model(rapidmodel, "rapidmodel")
-        with open("rapidmodel.pkl", "rb") as f:
-            st.download_button("Download Model", f.read(), file_name="rapidmodel.pkl", mime="application/octet-stream")
+        if st.button("Run Modelling"):
+            setup(df, target=chosen_target)
+            setup_df = pull()
+            st.dataframe(setup_df)
+            rapidmodel = compare_models()
+            compare_df = pull()
+            st.dataframe(compare_df)
+            save_model(rapidmodel, "rapidmodel")
+            with open("rapidmodel.pkl", "rb") as f:
+                st.download_button("Download Model", f.read(), file_name="rapidmodel.pkl", mime="application/octet-stream")
 
 # About
 if selected == "About":
